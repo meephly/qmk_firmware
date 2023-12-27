@@ -41,3 +41,5 @@
    - etc.
 */
 // #define MIDI_ADVANCED
+
+#define TAPPING_TOGGLE 2
