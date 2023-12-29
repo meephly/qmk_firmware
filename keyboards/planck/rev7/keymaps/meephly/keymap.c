@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LCTL, KC_LGUI,      KC_LALT,      TT(4),        TT(1),        KC_SPC, KC_BSPC, TT(3), TT(2),   OSL(4), KC_DEL,  KC_NO
   ),
   [1]  = LAYOUT_ortho_4x12(
-    KC_TILD, KC_EXLM,      KC_AT,        KC_HASH,      KC_DLR,       KC_PERC,       KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_TRNS,
+    QK_GESC, KC_EXLM,      KC_AT,        KC_HASH,      KC_DLR,       KC_PERC,       KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_TRNS,
     KC_ESC,  LGUI_T(KC_A), LALT_T(KC_S), LCTL_T(KC_D), LSFT_T(KC_F), LALT(KC_LSFT), KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NO,   KC_NO,
     KC_LSFT, LCTL(KC_Z),   LCTL(KC_X),   LCTL(KC_C),   LCTL(KC_V),   LCTL(KC_B),    KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_UP,   KC_ENT,
     KC_LCTL, KC_LGUI,      KC_LALT,      KC_TRNS,      KC_TRNS,      KC_SPC,        KC_DEL,  MO(5),   KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT
@@ -60,16 +60,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LCTL, KC_LGUI, KC_LALT, MO(6), KC_TRNS, KC_SPC, KC_BSPC, KC_TRNS, KC_TRNS, KC_VOLD, KC_VOLU, KC_MPLY
   ),
   [3]  = LAYOUT_ortho_4x12(
-    KC_TAB,  KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_BTN3, KC_NO,   KC_NO,
-    KC_ESC,  KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_WH_U, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_NO,   KC_NO,
-    KC_LSFT, KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_WH_D, KC_BTN2, KC_BTN1, KC_ACL0, KC_ACL1, KC_ACL2, KC_NO,
-    KC_LCTL, KC_LGUI, KC_LALT, KC_TRNS, MO(5), KC_NO,   KC_BTN1, KC_TRNS, KC_TRNS, KC_NO,   KC_NO,   KC_N
+    KC_TAB,  KC_NO,   KC_NO,   KC_BTN3, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_BTN3, KC_NO,   KC_NO,
+    KC_ESC,  KC_NO,   KC_NO,   KC_BTN2, KC_BTN1, KC_WH_U, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_NO,   KC_NO,
+    KC_LSFT, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_WH_D, KC_BTN2, KC_BTN1, KC_ACL0, KC_ACL1, KC_ACL2, KC_NO,
+    KC_LCTL, KC_LGUI, KC_LALT, KC_TRNS, MO(5),   KC_NO,   KC_BTN1, KC_TRNS, KC_TRNS, KC_NO,   KC_NO,   KC_N
   ),
   [4]  = LAYOUT_ortho_4x12(
     KC_NO,        KC_NO,      LALT(KC_F4), KC_NO,        KC_NO,      KC_NUM, KC_7, KC_8,    KC_9,  KC_MINS, KC_PSCR, KC_NO,
     LALT(KC_SPC), KC_F2,      KC_NO,       LSA(KC_TAB),  ALT_TAB,    KC_NO,  KC_4, KC_5,    KC_6,  KC_EQL,  KC_NO,   KC_NO,
     KC_NO,        LCTL(KC_Z), LCTL(KC_X),  LCTL(KC_C),   LCTL(KC_V), KC_NO,  KC_1, KC_2,    KC_3,  KC_NO,   KC_NO,   KC_ENT,
-    KC_NO,        KC_NO,      KC_NO,       KC_TRNS,      KC_TRNS,    KC_NO,  KC_0, KC_TRNS, MO(6), KC_TRNS, KC_VOLU, KC_MPLY
+    KC_NO,        KC_NO,      KC_NO,       KC_TRNS,      KC_TRNS,    KC_NO,  KC_0, KC_TRNS, MO(6), KC_VOLD, KC_VOLU, KC_MPLY
   ),
   [5]  = LAYOUT_ortho_4x12(
     KC_TAB,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,  LCAG(KC_LEFT), LCAG(KC_DOWN), LCAG(KC_UP), LCAG(KC_RGHT), KC_NO, KC_NO,
