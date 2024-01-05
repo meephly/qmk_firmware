@@ -86,10 +86,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LCTL, KC_LGUI,       KC_LALT,       KC_NO,         KC_NO,         KC_NO,         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO
     ),
     [4]  = LAYOUT_ortho_4x12(
-        KC_TAB,       KC_NO,   LALT(KC_F4), KC_NO,    KC_NO,   KC_NO,  KC_NUM,  KC_7,    KC_8,  KC_9,    KC_MINS, KC_PSCR,
-        LALT(KC_SPC), KC_NO,   KC_NO,       ALT_STAB, ALT_TAB, KC_NO,  KC_NO,   KC_4,    KC_5,  KC_6,    KC_PLUS, KC_NO,
-        LANG_CHNG,    KC_F5,   KC_F6,       KC_F7,    KC_F8,   KC_NO,  KC_NO,   KC_1,    KC_2,  KC_3,    KC_EQL,  KC_ENT,
-        KC_LCTL,      KC_LGUI, KC_LALT,     KC_NO,    KC_NO,   KC_SPC, KC_BSPC, KC_0,    MO(5), KC_NO,   KC_NO,   KC_NO
+        KC_TAB,       KC_1,    KC_2,    KC_3,     KC_4,    KC_5,        KC_6,    KC_7,    KC_8,  KC_9,    KC_MINS, KC_PSCR,
+        LALT(KC_SPC), KC_NO,   KC_NO,   ALT_STAB, ALT_TAB, KC_NO,       KC_NO,   KC_4,    KC_5,  KC_6,    KC_PLUS, KC_NO,
+        LANG_CHNG,    KC_F5,   KC_F6,   KC_F7,    KC_F8,   LALT(KC_F4), KC_NO,   KC_1,    KC_2,  KC_3,    KC_EQL,  KC_ENT,
+        KC_LCTL,      KC_LGUI, KC_LALT, KC_NO,    KC_NO,   KC_SPC,      KC_BSPC, KC_0,    MO(5), KC_NO,   KC_NO,   KC_NO
     ),
     [5]  = LAYOUT_ortho_4x12(TG(6), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO),
     [6]  = LAYOUT_ortho_4x12(
