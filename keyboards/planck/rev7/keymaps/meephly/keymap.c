@@ -6,6 +6,7 @@ uint16_t alt_tab_timer     = 0;     // Super ALT TAB
 enum custom_keycodes {
     ALT_TAB = SAFE_RANGE,
     ALT_STAB,
+    LANG_CHNG,
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -34,6 +35,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             } else {
                 unregister_code(KC_TAB);
                 unregister_code(KC_LSFT);
+            }
+            break;
+        case LANG_CHNG:
+            if (record->event.pressed) {
+                register_code(KC_LALT);
+                wait_ms(50);
+                register_code(KC_LSFT);
+                wait_ms(50);
+                unregister_code(KC_LSFT);
+                unregister_code(KC_LALT);
             }
             break;
     }
@@ -77,7 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [4]  = LAYOUT_ortho_4x12(
         KC_TAB,       KC_NO,   LALT(KC_F4), KC_NO,    KC_NO,   KC_NO,  KC_NUM,  KC_7,    KC_8,  KC_9,    KC_MINS, KC_PSCR,
         LALT(KC_SPC), KC_NO,   KC_NO,       ALT_STAB, ALT_TAB, KC_NO,  KC_NO,   KC_4,    KC_5,  KC_6,    KC_PLUS, KC_NO,
-        KC_LSFT,      KC_F5,   KC_F6,       KC_F7,    KC_F8,   KC_NO,  KC_NO,   KC_1,    KC_2,  KC_3,    KC_EQL,  KC_ENT,
+        LANG_CHNG,    KC_F5,   KC_F6,       KC_F7,    KC_F8,   KC_NO,  KC_NO,   KC_1,    KC_2,  KC_3,    KC_EQL,  KC_ENT,
         KC_LCTL,      KC_LGUI, KC_LALT,     KC_NO,    KC_NO,   KC_SPC, KC_BSPC, KC_0,    MO(5), KC_NO,   KC_NO,   KC_NO
     ),
     [5]  = LAYOUT_ortho_4x12(TG(6), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO),
